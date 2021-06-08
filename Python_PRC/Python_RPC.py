@@ -57,6 +57,8 @@ def get():
             s.write(f"/park/run {d1} \n".encode())
             time.sleep(1)
             s.write("/stop/run \n".encode())
+    elif k=='l':
+        s.write("/line/run\n".encode())
     else:
         print ("not an arrow key!")
     return 1
